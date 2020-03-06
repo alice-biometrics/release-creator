@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 source "$GITHUB_RELEASER_HOME/src/ensure.sh"
+source "$GITHUB_RELEASER_HOME/src/github.sh"
+source "$GITHUB_RELEASER_HOME/src/releaser.sh"
 
 main() {
   ensure::env_variable_exist "GITHUB_REPOSITORY"
