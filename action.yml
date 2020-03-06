@@ -10,8 +10,12 @@ inputs:
   description:
     description: 'New release description'
     required: true
+  repo:
+    description: 'Git repository where the release will be create'
+    required: false
+    default: 'this'
   branch:
-    description: 'Git branch to associate the releae'
+    description: 'Git repository branch where the release will be create'
     required: false
     default: 'master'
   draft:
