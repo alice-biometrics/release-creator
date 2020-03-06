@@ -2,6 +2,8 @@
 <img src="https://github.com/alice-biometrics/custom-emojis/blob/master/images/alice_header.png" width=auto>
 
 
+This action allows you to create a Github release dynamically. 
+
 ## Usage
 
 ```yml
@@ -39,6 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v1.0.0'
           description: 'This is an awesome version :ok_hand:'
+          repo: 'alice-biometrics/github-releaser'
           branch: 'master'
           draft: 'false'
           prerelease: 'false'
