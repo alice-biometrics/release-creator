@@ -52,3 +52,8 @@ jobs:
           draft: 'false'
           prerelease: 'false'
 ```
+
+## License 
+
+[MIT](LICENSE)
+
