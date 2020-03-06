@@ -1,0 +1,34 @@
+name: 'Github Releaser'
+description: 'Create a Github Release'
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  VERSION:
+    description: 'New release version'
+    required: true
+  DESCRIPTION:
+    description: 'New release description'
+    required: true
+  BRANCH:
+    description: 'Git branch to associate the releae'
+    required: false
+    default: 'master'
+  DRAFT:
+    description: 'Define if new release is a draft or not'
+    required: false
+    default: 'false'
+  PRERELEASE:
+    description: 'Define if new release is a prerelease or not'
+    required: false
+    default: 'false'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.GITHUB_TOKEN }}
+    - ${{ inputs.VERSION }}
+    - ${{ inputs.DESCRIPTION }}
+    - ${{ inputs.BRANCH }}
+    - ${{ inputs.DRAFT }}
+    - ${{ inputs.PRERELEASE }}
