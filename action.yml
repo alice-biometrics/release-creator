@@ -4,21 +4,21 @@ inputs:
   GITHUB_TOKEN:
     description: 'GitHub token'
     required: true
-  VERSION:
+  version:
     description: 'New release version'
     required: true
-  DESCRIPTION:
+  description:
     description: 'New release description'
     required: true
-  BRANCH:
+  branch:
     description: 'Git branch to associate the releae'
     required: false
     default: 'master'
-  DRAFT:
+  draft:
     description: 'Define if new release is a draft or not'
     required: false
     default: 'false'
-  PRERELEASE:
+  prerelease:
     description: 'Define if new release is a prerelease or not'
     required: false
     default: 'false'
@@ -27,8 +27,8 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.GITHUB_TOKEN }}
-    - ${{ inputs.VERSION }}
-    - ${{ inputs.DESCRIPTION }}
-    - ${{ inputs.BRANCH }}
-    - ${{ inputs.DRAFT }}
-    - ${{ inputs.PRERELEASE }}
+    - ${{ inputs.version }}
+    - ${{ inputs.description }}
+    - ${{ inputs.branch }}
+    - ${{ inputs.draft }}
+    - ${{ inputs.prerelease }}
