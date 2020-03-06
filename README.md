@@ -9,7 +9,10 @@ This action allows you to create a Github release dynamically.
 ```yml
 name: Github Releaser
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   github-releaser:
@@ -29,7 +32,10 @@ You can configure additional info with
 ```yml
 name: Github Releaser
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   github-releaser:
