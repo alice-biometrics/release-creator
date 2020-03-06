@@ -6,7 +6,6 @@ branch="master"
 draft="false"
 prerelease="false"
 
-
 docker build --no-cache -t github-releaser.
 
 docker run github-releaser:latest \
