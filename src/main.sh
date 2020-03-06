@@ -4,7 +4,9 @@ source "$GITHUB_RELEASER_HOME/src/ensure.sh"
 
 main() {
   ensure::env_variable_exist "GITHUB_REPOSITORY"
-  ensure::env_variable_exist "GITHUB_EVENT_PATH"
+  ensure::env_variable_exist "GITHUB_API_HEADER"
+  ensure::env_variable_exist "GITHUB_API_URI"
+
   ensure::total_args 6 "$@"
 
   export GITHUB_TOKEN="$1"
