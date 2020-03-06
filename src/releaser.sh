@@ -5,8 +5,8 @@ releaser::create() {
   local -r description="$2"
   local -r repo="$3"
   local -r branch="$4"
-  local -r draft="$5" == "true"
-  local -r prerelease="$6" == "true"
+  local -r draft="$5"
+  local -r prerelease="$6"
 
   release_data=$(printf '{"tag_name": "%s","target_commitish": "%s","name": "%s","body": "%s","draft": %s,"prerelease": %s}' "$version" "$branch" "$version" "$description" "$draft" "$prerelease" )
 

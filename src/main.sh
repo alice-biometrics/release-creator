@@ -5,15 +5,13 @@ source "$GITHUB_RELEASER_HOME/src/github.sh"
 source "$GITHUB_RELEASER_HOME/src/releaser.sh"
 
 main() {
-  ensure::env_variable_exist "GITHUB_REPOSITORY"
-  ensure::env_variable_exist "GITHUB_API_HEADER"
-  ensure::env_variable_exist "GITHUB_API_URI"
-
-  ensure::total_args 6 "$@"
-
   export GITHUB_TOKEN="$1"
+  export GITHUB_API_URI="https://api.github.com"
+  export GITHUB_API_HEADER="Accept: application/vnd.github.v3+json"
 
-  releaser::create "$2" "$3" "$4" "$5" "$6"
+  ensure::total_args 7 "$@"
+
+  releaser::create "$2" "$3" "$4" "$5" "$6" "$7"
 
   exit $?
 }
