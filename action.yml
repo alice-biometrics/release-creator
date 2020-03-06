@@ -33,6 +33,7 @@ runs:
     - ${{ inputs.GITHUB_TOKEN }}
     - ${{ inputs.version }}
     - ${{ inputs.description }}
+    - ${{ inputs.repo }}
     - ${{ inputs.branch }}
     - ${{ inputs.draft }}
     - ${{ inputs.prerelease }}
