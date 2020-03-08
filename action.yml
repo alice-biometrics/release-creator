@@ -1,4 +1,4 @@
-name: 'Github Releaser'
+name: 'Version Releaser'
 description: 'Create a Github Release'
 inputs:
   GITHUB_TOKEN:
