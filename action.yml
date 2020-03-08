@@ -37,3 +37,6 @@ runs:
     - ${{ inputs.branch }}
     - ${{ inputs.draft }}
     - ${{ inputs.prerelease }}
+branding:
+  icon: 'arrow-up-circle'  
+  color: 'blue'
