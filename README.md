@@ -1,13 +1,12 @@
-# github-releaser  
+# release-creator  
 <img src="https://github.com/alice-biometrics/custom-emojis/blob/master/images/alice_header.png" width=auto>
-
 
 This action allows you to create a Github release dynamically. 
 
 ## Usage
 
 ```yml
-name: Github Releaser
+name: Release Creator
 
 on:
   push:
@@ -15,14 +14,14 @@ on:
       - master
 
 jobs:
-  github-releaser:
+  update:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/github-releaser/@v1
+      - uses: alice-biometrics/release-creator/@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          version: 'v1.0.0'
+          version: 'v2.0.0'
           description: 'This is an awesome version :ok_hand:'
 ```
 
@@ -30,7 +29,7 @@ jobs:
 You can configure additional info with 
 
 ```yml
-name: Github Releaser
+name: Release Creator
 
 on:
   push:
@@ -38,11 +37,11 @@ on:
       - master
 
 jobs:
-  github-releaser:
+  update:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/github-releaser/@v1
+      - uses: alice-biometrics/release-creator/@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v1.0.0'
