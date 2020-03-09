@@ -6,7 +6,8 @@ inputs:
     required: true
   version:
     description: 'New release version'
-    required: true
+    required: false
+    default: 'inherit'
   description:
     description: 'New release description'
     required: false

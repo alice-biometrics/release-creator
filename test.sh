@@ -1,5 +1,5 @@
 GITHUB_TOKEN=$1
-version="v2.0.0"
+version="inherit"
 description="inherit"
 repo="alice-biometrics/github-releaser"
 branch="master"

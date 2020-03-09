@@ -10,6 +10,18 @@ github::create_release() {
    "$GITHUB_API_URI/repos/$repo/releases"
 }
 
+github::get_latest_release_version() {
+  local -r repo=$1
+
+  latest_release=$(curl -sSL \
+  -X GET \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  -H "$GITHUB_API_HEADER" \
+   "$GITHUB_API_URI/repos/$repo/releases/latest")
+
+  echo $(echo $latest_release | jq '.tag_name') | sed 's/"//g'
+}
+
 github::get_latest_release_body() {
   local -r repo=$1
 
