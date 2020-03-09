@@ -83,7 +83,7 @@ Image you have a private repo where you develop your SDK. Additionally, you've m
 Use `release-creator` if you want to copy releases notes from one repo to another with:
 
 
-From [release-creator-example-lib](https://github.com/alice-biometrics/release-creator-example-lib) :arrow_right: [release-creator-example-lib](https://github.com/alice-biometrics/release-creator-example-lib)
+From [release-creator-example-lib](https://github.com/alice-biometrics/release-creator-example-lib) :arrow_right: [release-creator-example](https://github.com/alice-biometrics/release-creator-example)
 
 ```yml
 name: Release Creator
