@@ -9,6 +9,8 @@ main() {
   export GITHUB_API_URI="https://api.github.com"
   export GITHUB_API_HEADER="Accept: application/vnd.github.v3+json"
 
+  export GITHUB_REPOSITORY="alice-biometrics/onboarding-web-lib"
+
   ensure::total_args 7 "$@"
 
   releaser::create "$2" "$3" "$4" "$5" "$6" "$7"

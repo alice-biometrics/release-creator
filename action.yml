@@ -9,7 +9,8 @@ inputs:
     required: true
   description:
     description: 'New release description'
-    required: true
+    required: false
+    default: 'inherit'
   repo:
     description: 'Git repository where the release will be create'
     required: false
