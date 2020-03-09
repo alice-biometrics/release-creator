@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/release-creator/@v1
+      - uses: alice-biometrics/release-creator/@v1.0.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v2.0.0'
@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/release-creator/@v1
+      - uses: alice-biometrics/release-creator/@v1.0.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v1.0.0'
@@ -77,11 +77,13 @@ or if you execute the action on `release`:
 
 Image you have a private repo where you develop your SDK. Additionally, you've made publicly available a Repo with some documentation about your SDK module.
 
-* private repo: TO ADD 
-* public repo: TO ADD 
+* private repo: [release-creator-example](https://github.com/alice-biometrics/release-creator-example)
+* public repo: [release-creator-example-lib](https://github.com/alice-biometrics/release-creator-example-lib)
 
 Use `release-creator` if you want to copy releases notes from one repo to another with:
 
+
+From [release-creator-example-lib](https://github.com/alice-biometrics/release-creator-example-lib) :arrow_right: [release-creator-example-lib](https://github.com/alice-biometrics/release-creator-example-lib)
 
 ```yml
 name: Release Creator
@@ -95,12 +97,12 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/release-creator/@v1
+      - uses: alice-biometrics/release-creator/@v1.0.3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'inherit'
           description: 'inherit'
-          repo: 'acostapazo/dummy-project'
+          repo: 'alice-biometrics/release-creator-example'
 ```
 
 
