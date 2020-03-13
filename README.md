@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/release-creator/@v1.0.3
+      - uses: alice-biometrics/release-creator/@v1.0.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v2.0.0'
@@ -65,7 +65,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/release-creator/@v1.0.3
+      - uses: alice-biometrics/release-creator/@v1.0.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'v1.0.0'
@@ -105,7 +105,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Create a release
     steps:
-      - uses: alice-biometrics/release-creator/@v1.0.3
+      - uses: alice-biometrics/release-creator/@v1.0.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           version: 'inherit'
