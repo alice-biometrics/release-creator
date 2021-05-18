@@ -3,14 +3,6 @@
 
 This action allows you to create a Github release dynamically. 
 
-## Table of Contents
-- [Usage :chart_with_upwards_trend:](#usage-chart_with_upwards_trend)
-- [Parameters :gear:](#parameters-gear)
-- [Use Cases :eyes:](#use-cases-eyes)
-  * [Duplicate Release Notes](#duplicate-release-notes)
-- [License :page_facing_up:](#license-page_facing_up)
-- [Contact :mailbox_with_mail:](#contact-mailbox_with_mail)
-
 ## Usage :chart_with_upwards_trend:
 
 ```yml
