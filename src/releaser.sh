@@ -3,7 +3,7 @@
 releaser::create() {
   local version="$1"
   local description="$2"
-  local -r repo="$3"
+  local repo="$3"
   local -r branch="$4"
   local -r draft="$5"
   local -r prerelease="$6"
